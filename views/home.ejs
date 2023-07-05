@@ -5,7 +5,9 @@
 
 <%first.forEach(function(letter){%>
    <h1><%=letter.title%></h1>
-   <p><%=letter.content%></p>
+   <p><%=letter.content.substring(0,100)+ "..."%>
+   <a href="/<%=letter.content%>">Read More</a>
+</p>
 <%})%>
 
    
