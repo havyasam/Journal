@@ -1,0 +1,31 @@
+
+<%-include('partials/header')%>
+<style>
+    .button {
+      border: none;
+      color: white;
+      padding: 7px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10%;
+    }
+    
+    .button1 {background-color:blue;} /* Green */
+    
+    </style>
+<h1>Compose</h1>
+<form action="/compose" method="post">
+<p><label for="w3review">Title</label></p>
+ <textarea type="text" name="sub1" rows="1" cols="100"></textarea>
+<p><label for="w3review">Post</label></p>
+  <textarea name="w3review" rows="4" cols="100"></textarea>
+  <br>
+  
+  <button text="submit"class="button button1">Publish</button>
+
+</form>
+<%-include('partials/footer')%>
